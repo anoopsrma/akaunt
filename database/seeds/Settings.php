@@ -54,7 +54,7 @@ class Settings extends Seeder
             'general.session_lifetime'          => '30',
             'general.file_size'                 => '2',
             'general.file_types'                => 'pdf,jpeg,jpg,png',
-            'general.wizard'                    => '0',
+            'general.wizard'                    => '1',
             'general.invoice_item'              => 'settings.invoice.item',
             'general.invoice_price'             => 'settings.invoice.price',
             'general.invoice_quantity'          => 'settings.invoice.quantity',

@@ -182,6 +182,10 @@ class Revenues extends Controller
 
         $payment_methods = Modules::getPaymentMethods();
 
+        if (request()->segment(2) === 'otherIncomes') {
+            return view('incomes.otherIncomes.edit', compact('revenue', 'accounts', 'currencies', 'currency', 'customers', 'categories', 'payment_methods'));
+        }
+
         return view('incomes.revenues.edit', compact('revenue', 'accounts', 'currencies', 'currency', 'customers', 'categories', 'payment_methods'));
     }
 
